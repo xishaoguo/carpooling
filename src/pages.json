@@ -1,0 +1,77 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "南乐北京拼车"
+			}
+		},
+		{
+			"path": "pages/ren/index",
+			"style": {
+				"navigationBarTitleText": "南乐北京拼车"
+			}
+		},
+		{
+			"path": "pages/che/index",
+			"style": {
+				"navigationBarTitleText": "南乐北京拼车"
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "南乐北京拼车"
+			}
+		},
+		{
+			"path": "pages/che/appointment",
+			"style": {
+				"navigationBarTitleText": "预约拼车"
+			}
+		},
+		{
+			"path": "pages/ren/invitation",
+			"style": {
+				"navigationBarTitleText": "预约拼车"
+			}
+		},
+		{
+			"path": "pages/info/index",
+			"style": {
+				"navigationBarTitleText": "我的需求"
+			}
+		},
+		{
+			"path": "pages/my/feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		},
+		{
+			"path": "pages/my/myCarpooling",
+			"style": {
+				"navigationBarTitleText": "我的拼车"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "南乐北京拼车",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"position": "bottom",
+        "list": [{
+            "pagePath": "pages/ren/index",
+            "text": "人找车"
+        }, {
+            "pagePath": "pages/che/index",
+            "text": "车找人"
+		}, {
+            "pagePath": "pages/my/index",
+            "text": "我的"
+		}]
+	}
+}
