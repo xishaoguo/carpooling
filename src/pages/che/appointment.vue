@@ -1,6 +1,6 @@
 <template>
     <view>
-        <CheToRen :item="item" :show="false"></CheToRen>
+        <CheToRen :item="item" :show="false" :telShow="true"></CheToRen>
         <view class="main">
             <button @click="appointmentPay">预约并支付</button>
         </view>

@@ -3,19 +3,19 @@
     <view class="content-order">
       <view class="content-order-title">拼车单</view>
       <view v-if="passengerOrder.length>0">
-          <RenToChe v-for="(item,index) in passengerOrder" :key="index" :item="item" :show="true" @agree="agree" @refuse="refuse"></RenToChe>
+          <RenToChe v-for="(item,index) in passengerOrder" :key="index" :item="item" :show="true" @agree="agree" @refuse="refuse" :telShow="true"></RenToChe>
       </view>
       <view v-if="driverOrder.length>0">
-          <CheToRen v-for="(item,index) in driverOrder" :key="index" :item="item" :show="true"></CheToRen>
+          <CheToRen v-for="(item,index) in driverOrder" :key="index" :item="item" :show="true" :telShow="true"></CheToRen>
       </view>
     </view>
     <view class="content-release">
       <view class="content-release-title">我发布的</view>
       <view v-if="driver.length>0">
-        <CheToRen v-for="(item,index) in driver" :key="index" :item="item"></CheToRen>
+        <CheToRen v-for="(item,index) in driver" :key="index" :item="item" :telShow="false"></CheToRen>
       </view>
       <view v-if="passenger.length>0">
-        <RenToChe v-for="(item,index) in passenger" :key="index" :item="item"></RenToChe>
+        <RenToChe v-for="(item,index) in passenger" :key="index" :item="item" :telShow="false"></RenToChe>
       </view>
     </view>
   </view>

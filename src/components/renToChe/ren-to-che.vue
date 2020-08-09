@@ -4,7 +4,7 @@
         <view class="list-content">
             <view><text>出发地：</text><text>{{item.placeOfDeparture}}</text></view>
             <view><text>目的地：</text><text>{{item.destination}}-{{item.specificLocation}}</text></view>
-            <view><text>电话：</text><text>{{item.tel}}</text></view>
+            <view><text>电话：</text><text>{{item.tel}}</text><button v-if="telShow" @click="call">打电话</button></view>
             <view><text>人数：</text><text>{{item.numberOfPeople}}人</text></view>
             <view><text>时间：</text><text>{{item.date}}</text></view>
             <view><text>有无行李：</text><text>{{item.luggage}}</text></view>
@@ -19,7 +19,7 @@
 </template>
 <script>
 export default {
-    props: ["item","show"],
+    props: ["item","show","telShow"],
     data() {
         return {
         }
@@ -33,6 +33,9 @@ export default {
         },
         refuse() {
             this.$emit("refuse",this.item)
+        },
+        call() {
+            this.$emit("call",this.item)
         }
     }
 }

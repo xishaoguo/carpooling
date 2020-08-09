@@ -2,7 +2,7 @@
   <view>
     <CountDown @nanLeToBJ="nanLeToBJ" @benJingToNL="benJingToNL"></CountDown>
     <scroll-view @scrolltolower="getDataList">
-      <CheToRen v-for="item in list" :key="item" :item="item" @lookChe="lookItem(item)" :show="false"></CheToRen>
+      <CheToRen v-for="item in list" :key="item" :item="item" @lookChe="lookItem(item)" :show="false" :telShow="true"></CheToRen>
     </scroll-view>
   </view>
 </template>
