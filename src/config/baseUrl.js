@@ -1,2 +1,2 @@
-const baseUrl = "http://192.168.1.101:3000/"
+const baseUrl = "http://192.168.1.169:3000/"
 module.exports = baseUrl;

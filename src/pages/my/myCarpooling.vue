@@ -24,6 +24,7 @@
 import baseUrl from "../../config/baseUrl";
 import RenToChe from "../../components/renToChe/ren-to-che";
 import CheToRen from "../../components/cheToRen/che-to-ren";
+import { getOpenId } from "../../utils";
 export default {
   data() {
     return {
@@ -44,7 +45,7 @@ export default {
       uni.request({
         url: baseUrl + "isReleaseInfo",
         data: {
-          openId: myThis.$store.state.openId
+          openId: getOpenId()
         },
         header: {
           "custom-header": "hello"
@@ -64,7 +65,7 @@ export default {
           data: {
             data: {
               type: "driver",
-              openId: myThis.$store.state.openId
+              openId: getOpenId()
             }
           },
           header: {
@@ -82,7 +83,7 @@ export default {
           data: {
             data: {
               type: "passenger",
-              openId: myThis.$store.state.openId
+              openId: getOpenId()
             }
           },
           header: {
@@ -100,7 +101,7 @@ export default {
           url: baseUrl + "addOrderInfo",
           data: {
             pageData: {
-              driverOpenId: myThis.$store.state.openId,
+              driverOpenId: getOpenId(),
               passengerOpenId: item.openId
             }
           },

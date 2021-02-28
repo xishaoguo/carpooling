@@ -17,6 +17,7 @@
 
 <script>
 import baseUrl from "../../config/baseUrl";
+import { getOpenId } from "../../utils";
 export default {
   data() {
     return {
@@ -93,7 +94,7 @@ export default {
       });
     },
     getData() {
-      console.log(this.$store.state.nale);
+      console.log(getOpenId());
     }
   }
 };
