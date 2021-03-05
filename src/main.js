@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App'
 import store from './store/index'
+import uView from "uview-ui";
+Vue.use(uView);
 
 Vue.config.productionTip = false
 
